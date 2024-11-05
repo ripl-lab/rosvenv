@@ -1,10 +1,17 @@
 # RIPL Guide
 This tool was developed by Adrian Röfer at the University of Freiburg. The orgininal instructions are below but I have created simplified instruction here for RIPL lab members to use.
 
+## Installation
 1. Install Docker for Ubuntu using Debian packages. [Official guide here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository).
 2. Add your user to the `docker` group: `sudo usermod -aG docker $USER`. You will need to restart your computer after this step.
 3. Clone this repository: `git clone git@github.com:ripl-lab/rosvenv.git`
 4. Source the instal script: `source path/to/rosvenv/install_rosvenv.bash`. Press `y` for yes and allow the program to install ROS in the docker container.
+
+## Usage
+1. Now to use rosvenv, create a ROS workspace: `createROSWS /home/$USER/catkin_ws --docker`. This will enter the docker container, create and build the ROS workspace.
+2. Press Ctrl+D to exit the Docker container. This is just practice for entering and exiting the Docker contrainer.
+3. Return to the Docker contrain with: `activateROS /home/$USER/catkin_ws`. You need to be in the container to run ROS commands.
+4. Do normal ROS things. Build packages with catkin_build, use ROS commands like `rostopic list` etc.
 
 # ROSVENV - A lightweight tool for isolating (and dockerizing) ROS1
 
