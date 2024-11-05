@@ -1,3 +1,9 @@
+# RIPL Guide
+This tool was developed by Adrian Röfer at the University of Freiburg. The orgininal instructions are below but I have created simplified instruction here for RIPL lab members to use.
+
+1. Install Docker for Ubuntu using Debian packages. [Official guide here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository).
+
+
 # ROSVENV - A lightweight tool for isolating (and dockerizing) ROS1
 
 Have you ever found yourself begrudgingly installing python packages globally when using ROS1? Have you ever been annoyed by constantly having to configure your `ROS_IP` and `ROS_MASTER_URI` environment variables for your different robots? If your answer was "yes", then this little bash script is for you! 
