@@ -2,6 +2,9 @@
 This tool was developed by Adrian Röfer at the University of Freiburg. The orgininal instructions are below but I have created simplified instruction here for RIPL lab members to use.
 
 1. Install Docker for Ubuntu using Debian packages. [Official guide here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository).
+2. Add your user to the `docker` group: `sudo usermod -aG docker $USER`
+3. Clone this repository: `git clone git@github.com:ripl-lab/rosvenv.git`
+4. Source the instal script: `source path/to/rosvenv/install_rosvenv.bash`
 
 
 # ROSVENV - A lightweight tool for isolating (and dockerizing) ROS1
